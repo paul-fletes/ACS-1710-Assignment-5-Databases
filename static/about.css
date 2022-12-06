@@ -1,0 +1,38 @@
+#about-section {
+    margin: 20px;
+    padding: 20px;
+}
+
+#about-us {
+    margin: 50px;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+#about-us p {
+    color: black;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: darkgreen;
+}
+
+#columns {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.column {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
