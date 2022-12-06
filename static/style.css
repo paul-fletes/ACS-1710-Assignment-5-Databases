@@ -25,6 +25,10 @@ section {
     align-items: center;
 }
 
+header {
+    padding: 20px;
+}
+
 nav {
     width: 100%;
     padding: 0;
@@ -62,7 +66,9 @@ footer {
     left: 0
 }
 
-a.nav, input.nav, form input.submit {
+a.nav,
+input.nav,
+form input.submit {
     border: none;
     background-color: #229954;
     border-radius: 3px;
@@ -116,7 +122,9 @@ div.card-content a {
     align-self: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #229954;
     font-family: 'Homemade Apple', cursive;
 }
