@@ -129,7 +129,7 @@ def edit(plant_id):
     else:
         # TODO: Make a `find_one` database call to get the plant object with the
         # passed-in _id.
-        plant_to_show = ''
+        plant_to_show = mongo.db.plants_data.find_one(plant_id)
 
         context = {
             'plant': plant_to_show
