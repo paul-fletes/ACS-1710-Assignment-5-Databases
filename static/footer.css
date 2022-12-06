@@ -1,0 +1,10 @@
+footer {
+    background-image: url('https://plantperfect.com/wp-content/uploads/2020/09/headerhouseplants.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: white;
+    height: 200px;
+    padding: 50px;
+    text-align: center;
+}
