@@ -76,7 +76,7 @@ def detail(plant_id):
     # plant's id.
     # HINT: This query should be on the `harvests` collection, not the `plants`
     # collection.
-    harvests = plant_to_show.find()
+    harvests = mongo.db.harvests_data.find({'id': plant_to_show})
 
     context = {
         'plant': plant_to_show,
