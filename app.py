@@ -56,8 +56,9 @@ def create():
         # TODO: Make an `insert_one` database call to insert the object into the
         # database's `plants` collection, and get its inserted id. Pass the
         # inserted id into the redirect call below.
-        id = mongo.db.plants_data.insert_one(new_plant)
-        return redirect(url_for('detail', plant_id=id))
+        mongo.db.plants_data.insert_one(new_plant)
+        print(f'this is this id: {new_plant}')
+        return redirect(url_for('detail', plant_id=new_plant['id']))
 
     else:
         return render_template('create.html')
