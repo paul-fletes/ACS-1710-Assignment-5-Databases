@@ -20,8 +20,6 @@ mongo = PyMongo(app)
 def plants_list():
     """Display the plants list page."""
 
-    # TODO: Replace the following line with a database call to retrieve *all*
-    # plants from the Mongo database's `plants` collection.
     plants_data = mongo.db.plants_data.find()
 
     context = {
@@ -70,7 +68,7 @@ def detail(plant_id):
 
     # TODO: Replace the following line with a database call to retrieve *one*
     # plant from the database, whose id matches the id passed in via the URL.
-    plant_to_show = mongo.db.plants_data.find_one(plant_id)
+    plant_to_show = mongo.db.plants_data.find_one({'_id': ObjectId(plant_id)})
 
     # TODO: Use the `find` database operation to find all harvests for the
     # plant's id.
